@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Geography Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display:ital,wght@1,700&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="home-row">
+  <img class="tit" src="img/titlepic.png" alt="Geography Quiz" style="max-width: 100%;" draggable="false">
+  <p class="intro">Three types of geography games.<br>Test your knowledge and learn.</p>
+  <a href="#qone" class="start">↓START THE QUIZ↓</a>
+  <pre class="legend">Estimated Time: 15 mins.</pre>
+  <img class="bg" draggable="false" src="img/bgmap.png">
+</div>
+<div class="quiz">
+<div id="qone" class="quone">
+<div class="container">
+      <h1 class="pone">Part One!</h1>
+      <h2 class="question"> How many countries can you name in <span class="time-limit"></span>?</h2>
+  <div class="main">
+          <button type="button" class="start-quone">Ready? Click here to start!</button>
+    <div class="started">
+            <input type="text" class="input">
+      <div class="status">
+          <div class="status-timer">
+                Time remaining: <span class="time-remaining"></span>
+          </div>
+          <div class="status-current-score">
+                Current score: <span class="score"></span>
+                out of <span class="total"></span>
+          </div>
+          <div class="status-final-results">
+            <span class="end-greeting"></span>You got <span class="score"></span>out of <span class="total"></span>.That's <span class="percent"></span>%!
+          </div>
+          </div>
+          <ul class="answers scored-answers"></ul>
+          <div class="footnote">
+            <a href="#qtwo" class="next">↓Next Question↓</a>
+          </div>
+      </div>
+  </div>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./main.js"></script>
+</div>
+</div>
+<div id="qtwo" class="qutwo">
+<div class="container">
+  <h1>Part Two!</h1>
+  <h2>Match the flag to the country outline!</h2>
+  <main>
+    <div class="flag-container">
+      <img
+      class="flags"
+      data-flag="ie"
+      draggable="true"
+      src="flags/ie.svg"
+      />
+      <img
+      class="flags"
+      data-flag="pk"
+      draggable="true"
+      src="flags/pk.svg"
+      />
+      <img
+      class="flags"
+      data-flag="pe"
+      draggable="true"
+      src="flags/pe.svg"
+      />
+      <img
+      class="flags"
+      data-flag="is"
+      draggable="true"
+      src="flags/is.svg"
+      />
+      <img
+      class="flags"
+      data-flag="ke"
+      draggable="true"
+      src="flags/ke.svg"
+      />
+      <img
+      class="flags"
+      data-flag="dk"
+      draggable="true"
+      src="flags/dk.svg"
+      />
+      <img
+      class="flags"
+      data-flag="mg"
+      draggable="true"
+      src="flags/mg.svg"
+      />
+      <img
+      class="flags"
+      data-flag="kr"
+      draggable="true"
+      src="flags/kr.svg"
+      />
+
+    </div>
+    <div class="boxes-container">
+      <div class="boxes boxone" data-flag="dk"></div>
+      <div class="boxes boxtwo" data-flag="ie"></div>
+      <div class="boxes boxthree" data-flag="is"></div>
+      <div class="boxes boxfour" data-flag="ke"></div><div class="boxes boxfive" data-flag="kr"></div>
+      <div class="boxes boxsix" data-flag="mg"></div>
+      <div class="boxes boxseven" data-flag="pe"></div>
+      <div class="boxes boxeight" data-flag="pk"></div>
+    </div>
+  </main>
+  <button class="btn-check">Done!</button>
+  <div class="footnotetwo">
+    <a href="#qthree" class="next">↓Next Question↓</a>
+  </div>
+</div>      
+</div>
+<div class="quthree" id="qthree">
+<div class="header">
+   <h1>Part Three!</h1>
+   <h2>Multiple choice questions!</h2>
+</div>
+<div class="form-c">
+  <div class="qa">
+    <div class="q">
+      <h3 class="q-item"></h3>
+    </div>
+    <div class="a">
+      <div class="a-item start-game">Start Quiz</div>
+        <!-- 			<div class="a-item">E36 M3</div>
+        <div class="a-item">E92 M3</div>
+        <div class="a-item">G80 M3</div>
+        <div class="a-item">F80 M3</div> -->
+      </div>
+    </div>
+    <div class="nextodd">Next Question</div>
+      <div class="progressBar"></div>
+      <div class="bar">
+        <div class="bar-w"></div>
+      </div>
+</div>
+</div>
+<div class="footnotefinal">
+ <p class="end">Thank You For Playing!&nbsp;<a href="" class="reset">↑Play Again↑</a></p>
+ <p class="credit">Made by <b>Raed._.bh</b></p>
+</div>
+</div>
+</body>
+<script src="part-one.js"></script>
+<script src="part-two.js"></script>
+<script src="part-three.js"></script>
+</html>
